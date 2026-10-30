@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriShield - Multi-Task Crop Disease & Severity Intelligence</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header Navbar -->
+        <header class="navbar">
+            <div class="brand">
+                <div class="brand-icon">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+                <div class="brand-text">
+                    <h1>AgriShield <span>AI</span></h1>
+                    <p>Multi-Task Crop Identification & Severity Analysis</p>
+                </div>
+            </div>
+            <div class="header-badges">
+                <span class="badge badge-accent"><i class="fa-solid fa-microchip"></i> EfficientNet-B0</span>
+                <span class="badge badge-success"><i class="fa-solid fa-circle-check"></i> 99.69% Accuracy</span>
+                <span class="badge badge-info"><i class="fa-solid fa-eye"></i> Grad-CAM XAI</span>
+            </div>
+        </header>
+
+        <!-- Main Workspace -->
+        <main class="workspace-grid">
+            <!-- Left Panel: Input & Control -->
+            <section class="card input-card">
+                <div class="card-header">
+                    <h2><i class="fa-solid fa-sliders"></i> Analysis Controls</h2>
+                </div>
+
+                <form id="diagnostic-form" enctype="multipart/form-data">
+                    <!-- Crop Species Selector Filter (Objective 3) -->
+                    <div class="form-group">
+                        <label for="crop_species">
+                            <i class="fa-solid fa-seedling"></i> Select Crop Species Filter:
+                            <span class="tooltip-icon" title="Enforces Species-Constrained Softmax Masking to prevent cross-species errors"><i class="fa-solid fa-circle-info"></i></span>
+                        </label>
+                        <select id="crop_species" name="crop_species" class="custom-select">
+                            <option value="All">🌐 All Crop Species (Unconstrained)</option>
+                            {% for crop in crops %}
+                                {% if crop != 'All' %}
+                                    <option value="{{ crop }}">🌿 {{ crop }}</option>
+                                {% endif %}
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <!-- Drag and Drop Image Dropzone -->
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-cloud-arrow-up"></i> Upload Leaf Image:</label>
+                        <div class="dropzone" id="dropzone">
+                            <input type="file" id="file-input" name="file" accept="image/*" class="file-input" required>
+                            <div class="dropzone-content" id="dropzone-prompt">
+                                <i class="fa-solid fa-image dropzone-icon"></i>
+                                <p class="dropzone-text">Drag & Drop leaf photo here or <span>Browse</span></p>
+                                <span class="dropzone-hint">Supports JPG, PNG, WEBP (Max 16MB)</span>
+                            </div>
+                            <div class="image-preview-container hidden" id="preview-container">
+                                <img id="image-preview" src="" alt="Uploaded Leaf Preview">
+                                <button type="button" id="remove-btn" class="btn-remove" title="Remove Image"><i class="fa-solid fa-xmark"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-primary" id="analyze-btn">
+                        <i class="fa-solid fa-bolt"></i> Run Multi-Task Analysis
+                    </button>
+                </form>
+
+                <!-- Loading State Overlay -->
+                <div class="loading-overlay hidden" id="loading-overlay">
+                    <div class="spinner"></div>
+                    <p class="loading-text">Computing EfficientNet-B0 Features...</p>
+                    <span class="loading-subtext">Generating Grad-CAM Heatmap & Severity Score</span>
+                </div>
+            </section>
+
+            <!-- Right Panel: Results & XAI Output -->
+            <section class="card results-card">
+                <div class="card-header">
+                    <h2><i class="fa-solid fa-square-poll-vertical"></i> Analysis Results</h2>
+                    <span class="status-indicator" id="status-tag">Awaiting Input</span>
+                </div>
+
+                <!-- Empty Placeholder State -->
+                <div class="empty-state" id="empty-state">
+                    <i class="fa-solid fa-microscope empty-icon"></i>
+                    <h3>No Analysis Run Yet</h3>
+                    <p>Select a crop species filter and upload a leaf image to generate real-time crop identification, disease classification, infection severity grading, and Grad-CAM explainability heatmaps.</p>
+                </div>
+
+                <!-- Results Output Panel -->
+                <div class="results-body hidden" id="results-body">
+                    <!-- Crop Mismatch Alert Banner (Objective 4) -->
+                    <div class="mismatch-banner hidden" id="mismatch-banner">
+                        <div class="mismatch-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                        <div class="mismatch-content">
+                            <h4>Crop Mismatch Warning!</h4>
+                            <p id="mismatch-text">Selected crop filter conflicts with uploaded image features.</p>
+                            <button type="button" class="btn-warning" id="auto-fix-btn">
+                                <i class="fa-solid fa-arrow-rotate-right"></i> Switch Filter to <strong id="suggested-crop-name">Tomato</strong>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Output Grid: Crop Name, Disease Name, and Severity Stage Separated -->
+                    <div class="diagnosis-grid">
+                        <div class="diag-box crop-box">
+                            <span class="diag-label">Predicted Crop</span>
+                            <h3 id="res-crop-name">Tomato</h3>
+                            <div class="crop-pill" id="res-crop-pill">
+                                <i class="fa-solid fa-seedling"></i> Crop Species
+                            </div>
+                        </div>
+
+                        <div class="diag-box disease-box">
+                            <span class="diag-label">Predicted Disease</span>
+                            <h3 id="res-disease-name">Late Blight</h3>
+                            <div class="confidence-pill" id="res-confidence-pill">
+                                <i class="fa-solid fa-chart-line"></i> Confidence: <span id="res-confidence">99.4%</span>
+                            </div>
+                        </div>
+
+                        <div class="diag-box severity-box">
+                            <span class="diag-label">Infection Severity Stage</span>
+                            <div class="severity-badge" id="res-severity-badge">
+                                <span id="res-severity-stage">Moderate</span>
+                            </div>
+                            <div class="severity-progress-bar">
+                                <div class="severity-progress-fill" id="severity-fill" style="width: 60%;"></div>
+                            </div>
+                            <span class="severity-confidence-sub">Severity Confidence: <strong id="res-severity-conf">92%</strong></span>
+                        </div>
+                    </div>
+
+                    <!-- Visual Explainability Heatmap Viewer (Objective 5) -->
+                    <div class="xai-container">
+                        <div class="xai-header">
+                            <h3><i class="fa-solid fa-fire-flame-curved"></i> Grad-CAM Visual Attention (XAI)</h3>
+                            <div class="view-toggle">
+                                <button type="button" class="toggle-btn active" id="btn-show-heatmap"><i class="fa-solid fa-layer-group"></i> Grad-CAM Overlay</button>
+                                <button type="button" class="toggle-btn" id="btn-show-original"><i class="fa-solid fa-image"></i> Original Photo</button>
+                            </div>
+                        </div>
+                        <div class="xai-viewer">
+                            <img id="res-image-display" src="" alt="Visual Attention Output">
+                            <div class="heatmap-legend">
+                                <span>Low Attention</span>
+                                <div class="gradient-bar"></div>
+                                <span>High Lesion Activation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

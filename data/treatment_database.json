@@ -1,0 +1,268 @@
+{
+  "Apple___Apple_scab": {
+    "disease_name": "Apple Scab",
+    "crop_species": "Apple",
+    "cultural_measures": ["Prune affected foliage to increase airflow", "Rake and destroy fallen leaves in autumn"],
+    "organic_remedies": ["Apply copper hydroxide or liquid sulfur spray early in the season"],
+    "chemical_treatments": ["Apply Myclobutanil or Captan fungicide at 10-14 day intervals during wet weather"]
+  },
+  "Apple___Black_rot": {
+    "disease_name": "Black Rot",
+    "crop_species": "Apple",
+    "cultural_measures": ["Prune out mummified fruits and dead limbs", "Maintain canopy sunlight exposure"],
+    "organic_remedies": ["Bordeaux mixture spray during dormant season"],
+    "chemical_treatments": ["Apply Thiophanate-methyl or Captan starting at pink bud stage"]
+  },
+  "Apple___Cedar_apple_rust": {
+    "disease_name": "Cedar Apple Rust",
+    "crop_species": "Apple",
+    "cultural_measures": ["Remove nearby red cedar or juniper trees within 1-2 miles", "Plant rust-resistant apple cultivars"],
+    "organic_remedies": ["Sulfur-based fungicides applied before spore release"],
+    "chemical_treatments": ["Apply Myclobutanil or Propiconazole from green tip through petal fall"]
+  },
+  "Apple___healthy": {
+    "disease_name": "Healthy Apple Leaf",
+    "crop_species": "Apple",
+    "cultural_measures": ["Maintain regular irrigation and balanced NPK fertilisation", "Monitor routinely for early pest activity"],
+    "organic_remedies": ["Preventative neem oil application"],
+    "chemical_treatments": ["No chemical treatment required"]
+  },
+  "Blueberry___healthy": {
+    "disease_name": "Healthy Blueberry Leaf",
+    "crop_species": "Blueberry",
+    "cultural_measures": ["Maintain soil pH between 4.5 and 5.5", "Mulch pine bark around base"],
+    "organic_remedies": ["Maintain optimal organic mulch"],
+    "chemical_treatments": ["No chemical treatment required"]
+  },
+  "Cherry_(including_sour)___Powdery_mildew": {
+    "disease_name": "Cherry Powdery Mildew",
+    "crop_species": "Cherry",
+    "cultural_measures": ["Prune trees to open up canopy", "Avoid overhead sprinkler irrigation"],
+    "organic_remedies": ["Apply potassium bicarbonate or neem oil spray"],
+    "chemical_treatments": ["Apply Myclobutanil or Quinoxyfen fungicides at first sign of white mildew"]
+  },
+  "Cherry_(including_sour)___healthy": {
+    "disease_name": "Healthy Cherry Leaf",
+    "crop_species": "Cherry",
+    "cultural_measures": ["Prune annually during dormant season", "Ensure adequate root drainage"],
+    "organic_remedies": ["Apply compost tea"],
+    "chemical_treatments": ["No chemical treatment required"]
+  },
+  "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+    "disease_name": "Corn Gray Leaf Spot",
+    "crop_species": "Corn (Maize)",
+    "cultural_measures": ["Rotate crops with non-host species like soybean", "Till crop residue under after harvest"],
+    "organic_remedies": ["Apply copper-based fungicides at early VT growth stage"],
+    "chemical_treatments": ["Apply Azoxystrobin or Pyraclostrobin strobilurin fungicides at V12-VT stage"]
+  },
+  "Corn_(maize)___Common_rust_": {
+    "disease_name": "Corn Common Rust",
+    "crop_species": "Corn (Maize)",
+    "cultural_measures": ["Plant resistant corn hybrids", "Ensure proper field spacing to reduce canopy humidity"],
+    "organic_remedies": ["Sulfur sprays early in disease progression"],
+    "chemical_treatments": ["Apply Propiconazole or Azoxystrobin when pustules first appear on leaves"]
+  },
+  "Corn_(maize)___Northern_Leaf_Blight": {
+    "disease_name": "Northern Corn Leaf Blight",
+    "crop_species": "Corn (Maize)",
+    "cultural_measures": ["Use 2-year crop rotation", "Destroy crop debris after harvest"],
+    "organic_remedies": ["Bio-fungicides containing Bacillus subtilis"],
+    "chemical_treatments": ["Apply Mancozeb or Strobilurin + Triazole combination fungicides"]
+  },
+  "Corn_(maize)___healthy": {
+    "disease_name": "Healthy Corn Leaf",
+    "crop_species": "Corn (Maize)",
+    "cultural_measures": ["Ensure adequate nitrogen side-dressing", "Maintain weed control"],
+    "organic_remedies": ["Preventative microbial foliar spray"],
+    "chemical_treatments": ["No chemical treatment required"]
+  },
+  "Grape___Black_rot": {
+    "disease_name": "Grape Black Rot",
+    "crop_species": "Grape",
+    "cultural_measures": ["Remove mummified berries from vines and ground", "Keep vineyard canopy open"],
+    "organic_remedies": ["Copper fungicides from bloom until 4 weeks after bloom"],
+    "chemical_treatments": ["Apply Myclobutanil or Mancozeb every 10-14 days starting at 1-inch shoot growth"]
+  },
+  "Grape___Esca_(Black_Measles)": {
+    "disease_name": "Grape Esca (Black Measles)",
+    "crop_species": "Grape",
+    "cultural_measures": ["Prune out infected cordons and trunk wood", "Protect fresh pruning wounds with paint/fungicide"],
+    "organic_remedies": ["Trichoderma-based biocontrol applied to pruning cuts"],
+    "chemical_treatments": ["Apply wound sealants containing Benomyl or Thiophanate-methyl post-pruning"]
+  },
+  "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+    "disease_name": "Grape Leaf Blight",
+    "crop_species": "Grape",
+    "cultural_measures": ["Collect and burn fallen autumn leaves", "Ensure canopy aeration"],
+    "organic_remedies": ["Apply Bordeaux mixture"],
+    "chemical_treatments": ["Foliar spray with Copper Oxychloride or Captan"]
+  },
+  "Grape___healthy": {
+    "disease_name": "Healthy Grape Leaf",
+    "crop_species": "Grape",
+    "cultural_measures": ["Regular leaf pulling for ventilation", "Balanced vine canopy management"],
+    "organic_remedies": ["Preventative compost extract spray"],
+    "chemical_treatments": ["No chemical treatment required"]
+  },
+  "Orange___Haunglongbing_(Citrus_greening)": {
+    "disease_name": "Citrus Greening (HLB)",
+    "crop_species": "Orange",
+    "cultural_measures": ["Remove and burn symptomatic trees to prevent insect vector spread", "Control Asian Citrus Psyllid"],
+    "organic_remedies": ["Apply horticultural mineral oils to control psyllid vectors"],
+    "chemical_treatments": ["Systemic insecticides (Imidacloprid, Thiamethoxam) to suppress psyllid populations"]
+  },
+  "Peach___Bacterial_spot": {
+    "disease_name": "Peach Bacterial Spot",
+    "crop_species": "Peach",
+    "cultural_measures": ["Plant disease-resistant peach varieties", "Avoid high nitrogen fertilizers that cause tender flushes"],
+    "organic_remedies": ["Apply low-dose copper spray during dormant and early blossom stage"],
+    "chemical_treatments": ["Oxytetracycline or Copper-mancozeb tank mix at petal fall"]
+  },
+  "Peach___healthy": {
+    "disease_name": "Healthy Peach Leaf",
+    "crop_species": "Peach",
+    "cultural_measures": ["Annual orchard pruning", "Maintain soil mulch"],
+    "organic_remedies": ["Seaweed extract foliar nutrition"],
+    "chemical_treatments": ["No chemical treatment required"]
+  },
+  "Pepper,_bell___Bacterial_spot": {
+    "disease_name": "Bell Pepper Bacterial Spot",
+    "crop_species": "Pepper",
+    "cultural_measures": ["Use certified disease-free seeds", "Avoid overhead irrigation"],
+    "organic_remedies": ["Copper hydroxide spray mixed with Bacillus thuringiensis"],
+    "chemical_treatments": ["Copper hydroxide + Mancozeb tank mix every 7-10 days"]
+  },
+  "Pepper,_bell___healthy": {
+    "disease_name": "Healthy Pepper Leaf",
+    "crop_species": "Pepper",
+    "cultural_measures": ["Drip irrigation", "Staking plants for stability"],
+    "organic_remedies": ["Foliar neem oil spray"],
+    "chemical_treatments": ["No chemical treatment required"]
+  },
+  "Potato___Early_blight": {
+    "disease_name": "Potato Early Blight",
+    "crop_species": "Potato",
+    "cultural_measures": ["2-3 year crop rotation", "Ensure adequate nitrogen and potassium fertilization"],
+    "organic_remedies": ["Copper octanoate or sulfur foliar sprays"],
+    "chemical_treatments": ["Apply Chlorothalonil or Mancozeb at first sign of brown target spots"]
+  },
+  "Potato___Late_blight": {
+    "disease_name": "Potato Late Blight",
+    "crop_species": "Potato",
+    "cultural_measures": ["Destroy volunteer potatoes", "Avoid over-watering and kill vines prior to harvest"],
+    "organic_remedies": ["Fixed copper sprays applied before rain events"],
+    "chemical_treatments": ["Systemic fungicides: Metalaxyl, Ridomil Gold, or Cymoxanil immediately upon outbreak"]
+  },
+  "Potato___healthy": {
+    "disease_name": "Healthy Potato Leaf",
+    "crop_species": "Potato",
+    "cultural_measures": ["Hilling potato rows", "Proper spacing for airflow"],
+    "organic_remedies": ["Preventative compost tea"],
+    "chemical_treatments": ["No chemical treatment required"]
+  },
+  "Raspberry___healthy": {
+    "disease_name": "Healthy Raspberry Leaf",
+    "crop_species": "Raspberry",
+    "cultural_measures": ["Prune out old fruiting canes post-harvest", "Keep rows narrow for sun exposure"],
+    "organic_remedies": ["Organic mulch application"],
+    "chemical_treatments": ["No chemical treatment required"]
+  },
+  "Soybean___healthy": {
+    "disease_name": "Healthy Soybean Leaf",
+    "crop_species": "Soybean",
+    "cultural_measures": ["Crop rotation with corn", "Maintain recommended seeding density"],
+    "organic_remedies": ["Bio-fertilizers"],
+    "chemical_treatments": ["No chemical treatment required"]
+  },
+  "Squash___Powdery_mildew": {
+    "disease_name": "Squash Powdery Mildew",
+    "crop_species": "Squash",
+    "cultural_measures": ["Plant in full sun locations", "Avoid wet leaves in late evening"],
+    "organic_remedies": ["Spray milk dilution (1:9 ratio) or potassium bicarbonate weekly"],
+    "chemical_treatments": ["Apply Myclobutanil or Triflumizole fungicide at first white patch"]
+  },
+  "Strawberry___Leaf_scorch": {
+    "disease_name": "Strawberry Leaf Scorch",
+    "crop_species": "Strawberry",
+    "cultural_measures": ["Renovate strawberry beds after harvest", "Remove infected foliage"],
+    "organic_remedies": ["Copper soap fungicide"],
+    "chemical_treatments": ["Apply Captan or Syngenta Switch fungicide early in spring"]
+  },
+  "Strawberry___healthy": {
+    "disease_name": "Healthy Strawberry Leaf",
+    "crop_species": "Strawberry",
+    "cultural_measures": ["Straw mulching to keep berries clean", "Drip irrigation"],
+    "organic_remedies": ["Neem oil preventive spray"],
+    "chemical_treatments": ["No chemical treatment required"]
+  },
+  "Tomato___Bacterial_spot": {
+    "disease_name": "Tomato Bacterial Spot",
+    "crop_species": "Tomato",
+    "cultural_measures": ["Use clean certified seeds", "Practice 2-year crop rotation without solanaceous crops"],
+    "organic_remedies": ["Copper hydroxide + Streptomyces lydicus bio-bactericide"],
+    "chemical_treatments": ["Apply Copper sulfate mixed with Mancozeb weekly during humid weather"]
+  },
+  "Tomato___Early_blight": {
+    "disease_name": "Tomato Early Blight",
+    "crop_species": "Tomato",
+    "cultural_measures": ["Mulch ground to prevent soil splash", "Prune lower leaves touching soil"],
+    "organic_remedies": ["Copper octanoate or Bacillus amyloliquefaciens bio-fungicide"],
+    "chemical_treatments": ["Apply Chlorothalonil or Mancozeb every 7-10 days"]
+  },
+  "Tomato___Late_blight": {
+    "disease_name": "Tomato Late Blight",
+    "crop_species": "Tomato",
+    "cultural_measures": ["Destroy infected plants immediately", "Avoid overhead watering"],
+    "organic_remedies": ["Copper-based fungicides applied preventatively"],
+    "chemical_treatments": ["Apply Metalaxyl (Ridomil Gold) or Mandipropamid immediately upon detection"]
+  },
+  "Tomato___Leaf_Mold": {
+    "disease_name": "Tomato Leaf Mold",
+    "crop_species": "Tomato",
+    "cultural_measures": ["Increase greenhouse ventilation", "Keep relative humidity below 85%"],
+    "organic_remedies": ["Sulfur or bio-fungicide sprays"],
+    "chemical_treatments": ["Apply Difenoconazole or Chlorothalonil fungicide"]
+  },
+  "Tomato___Septoria_leaf_spot": {
+    "disease_name": "Tomato Septoria Leaf Spot",
+    "crop_species": "Tomato",
+    "cultural_measures": ["Control solanaceous weeds around field", "Stake and tie plants"],
+    "organic_remedies": ["Copper fungicide applied at first sign of lower leaf spot"],
+    "chemical_treatments": ["Apply Chlorothalonil or Azoxystrobin at 7-14 day intervals"]
+  },
+  "Tomato___Spider_mites Two-spotted_spider_mite": {
+    "disease_name": "Tomato Two-Spotted Spider Mite",
+    "crop_species": "Tomato",
+    "cultural_measures": ["Keep fields free of dust", "Avoid excessive nitrogen fertilization"],
+    "organic_remedies": ["Release Phytoseiulus persimilis predatory mites or spray Insecticidal Soap / Neem Oil"],
+    "chemical_treatments": ["Apply Abamectin or Bifenazate miticide focusing on leaf undersides"]
+  },
+  "Tomato___Target_Spot": {
+    "disease_name": "Tomato Target Spot",
+    "crop_species": "Tomato",
+    "cultural_measures": ["Maintain wide plant spacing for fast leaf drying", "Remove lower diseased leaves"],
+    "organic_remedies": ["Copper fungicide spray"],
+    "chemical_treatments": ["Apply Chlorothalonil, Pyraclostrobin, or Boscalid fungicides"]
+  },
+  "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+    "disease_name": "Tomato Yellow Leaf Curl Virus (TYLCV)",
+    "crop_species": "Tomato",
+    "cultural_measures": ["Use yellow sticky traps to monitor silverleaf whiteflies", "Use fine insect netting in nurseries"],
+    "organic_remedies": ["Apply Neem Oil or Pyrethrin to control whitefly vector"],
+    "chemical_treatments": ["Systemic insecticides (Imidacloprid, Acetamiprid) to control whiteflies"]
+  },
+  "Tomato___Tomato_mosaic_virus": {
+    "disease_name": "Tomato Mosaic Virus (ToMV)",
+    "crop_species": "Tomato",
+    "cultural_measures": ["Wash hands with milk or soap before handling plants", "Disinfect pruning shears with 20% skim milk solution"],
+    "organic_remedies": ["No cure; rogue out infected plants immediately"],
+    "chemical_treatments": ["No chemical cure exists for viral infection; focus on vector control and sanitation"]
+  },
+  "Tomato___healthy": {
+    "disease_name": "Healthy Tomato Leaf",
+    "crop_species": "Tomato",
+    "cultural_measures": ["Regular pruning of suckers", "Consistent drip irrigation to prevent blossom end rot"],
+    "organic_remedies": ["Preventative compost tea or neem oil"],
+    "chemical_treatments": ["No chemical treatment required"]
+  }
+}
