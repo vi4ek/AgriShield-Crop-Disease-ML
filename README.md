@@ -9,7 +9,7 @@
   <a href="https://flask.palletsprojects.com/"><img src="https://img.shields.io/badge/Flask-3.0%2B-000000.svg?style=for-the-badge&logo=flask" alt="Flask"/></a>
   <a href="#"><img src="https://img.shields.io/badge/Accuracy-99.69%25-brightgreen.svg?style=for-the-badge" alt="Accuracy"/></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License"/></a>
-  <a href="docs/certificates/"><img src="https://img.shields.io/badge/Status-Published%20Research-success.svg?style=for-the-badge" alt="Published"/></a>
+  <a href="https://ijirt.org/article?manuscript=208448"><img src="https://img.shields.io/badge/IJIRT-Published%20Paper%20(ID%20208448)-success.svg?style=for-the-badge" alt="IJIRT Published"/></a>
 </p>
 
 ---
@@ -28,6 +28,22 @@ Agricultural crop diseases account for **20% to 40% of annual global yield loss*
 - Enforces **Species-Constrained Softmax Masking** to mathematically eliminate cross-species false alarms.
 - Validates leaf inputs with a **Confidence-Based Crop Mismatch Alert Engine** (<45% threshold).
 - Provides visual verification through **Grad-CAM (Gradient-Weighted Class Activation Mapping)** heatmaps.
+
+---
+
+## 📜 Publication Details
+
+This research has been peer-reviewed, accepted, and published in the **International Journal of Innovative Research in Technology (IJIRT)**:
+
+- **Paper Title**: *Crop Disease Detection and Severity Estimation Using Machine Learning*
+- **Journal**: International Journal of Innovative Research in Technology (IJIRT)
+- **ISSN**: 2349-6002 | **Impact Factor**: 8.412
+- **Conference**: National Conference on "INSIGHT 2026", August 2026
+- **Registration / Manuscript ID**: `208448`
+- **DOI**: [`10.64643/ijirt.208448`](https://doi.org/10.64643/ijirt.208448)
+- **Official Web Link**: [https://ijirt.org/article?manuscript=208448](https://ijirt.org/article?manuscript=208448)
+- **Published Paper PDF**: [`docs/research/IJIRT_Published_Research_Paper.pdf`](docs/research/IJIRT_Published_Research_Paper.pdf)
+- **Author Publication Certificate**: [`docs/certificates/publication_certificate.jpeg`](docs/certificates/publication_certificate.jpeg)
 
 ---
 
@@ -118,16 +134,13 @@ AgriShield includes a complete, responsive web application built with **Flask**,
 │   ├── AgriShield_Model_Training_Colab.ipynb
 │   └── AgriShield_Research_Pipeline.ipynb
 │
-├── docs/                       # Research documentation & published certificates
+├── docs/                       # Research publication & documentation
 │   ├── research/
-│   │   ├── AgriShield_Research_Paper.docx
-│   │   ├── AgriShield_Project_Synopsis.docx
-│   │   ├── AgriShield_Presentation.pptx
-│   │   └── AgriShield_Presentation_Script_and_Viva_Guide.pdf
+│   │   ├── IJIRT_Published_Research_Paper.pdf # Official published journal paper
+│   │   ├── AgriShield_Presentation.pptx       # Defense presentation deck
+│   │   └── AgriShield_Presentation_Script_and_Viva_Guide.pdf # Viva guide
 │   └── certificates/
-│       ├── publication_certificate_1.jpeg
-│       ├── publication_certificate_2.jpeg
-│       └── publication_certificate_3.jpeg
+│       └── publication_certificate.jpeg       # Author publication certificate
 │
 ├── sample_images/              # Test leaf images for quick trial runs
 │   ├── tomato_leaf.jpg
@@ -183,31 +196,33 @@ python pipeline_execution.py
 
 ---
 
-## 👥 Research Team & Guidance
+## 👤 Author & Research Attribution
 
-* **Primary Authors**:
-  - **Vivek Kale** (Roll No: 52)
-  - **Rahul Patil** (Roll No: 36)
-  - **Pratap Suryavanshi** (Roll No: 33)
-* **Internal Research Guide**:
-  - **Dr. Kavita Dhakad**, Assistant Professor
-* **Institution**:
-  - **School of Information Technology, Department of Computer Applications, Indira University, Pune**
+* **Primary Author & Lead Developer**:
+  - **Vivek Kale**
+  - Department of Computer Applications, School of Information Technology, Indira University, Pune
   - Master of Science in Computer Applications (M.Sc. CA)
+* **Research Guide**:
+  - **Dr. Kavita Dhakad**, Assistant Professor, School of Information Technology, Indira University, Pune
 
 ---
 
 ## 📜 Citation
 
-If you use AgriShield or its multi-task architecture in your research or project, please cite:
+If you use AgriShield or its multi-task architecture in your research, please cite the published IJIRT paper:
 
 ```bibtex
-@article{kale2026agrishield,
-  title={Crop Disease Detection and Severity Estimation Using Leaf Images: A Multi-Task Dual-Head Deep Learning Framework},
+@article{kale2026cropdisease,
+  title={Crop Disease Detection and Severity Estimation Using Machine Learning},
   author={Kale, Vivek and Patil, Rahul and Suryavanshi, Pratap and Dhakad, Kavita},
-  journal={Indira University Research Repository},
+  journal={International Journal of Innovative Research in Technology (IJIRT)},
+  volume={13},
+  issue={3},
+  pages={459--467},
   year={2026},
-  publisher={School of Information Technology, Indira University, Pune}
+  issn={2349-6002},
+  doi={10.64643/ijirt.208448},
+  url={https://ijirt.org/article?manuscript=208448}
 }
 ```
 
