@@ -197,13 +197,14 @@ python pipeline_execution.py
 
 ---
 
-## 👤 Author & Research Attribution
+## 👥 Authors & Research Attribution
 
-* **Primary Author & Developer**:
-  - **Vivek Kale**
-  - Department of Computer Applications, School of Information Technology, Indira University, Pune
-  - Master of Science in Computer Applications (M.Sc. CA)
-* **Research Guide**:
+* **Authors**:
+  - **Vivek Kale** (Lead Developer & Primary Author)
+  - **Rahul Patil** (Co-Author)
+  - **Pratap Suryavanshi** (Co-Author)
+  - *Affiliation*: Department of Computer Applications, School of Information Technology, Indira University, Pune (M.Sc. CA)
+* **Internal Research Guide**:
   - **Dr. Kavita Dhakad**, Assistant Professor, School of Information Technology, Indira University, Pune
 
 ---
@@ -220,7 +221,7 @@ If you use AgriShield or its multi-task architecture in your research, please ci
 ```bibtex
 @article{kale2026cropdisease,
   title={Crop Disease Detection and Severity Estimation Using Machine Learning},
-  author={Kale, Vivek and Dhakad, Kavita},
+  author={Kale, Vivek and Patil, Rahul and Suryavanshi, Pratap and Dhakad, Kavita},
   journal={International Journal of Innovative Research in Technology (IJIRT)},
   volume={13},
   issue={3},
