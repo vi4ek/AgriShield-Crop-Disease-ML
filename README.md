@@ -10,6 +10,7 @@
   <a href="#"><img src="https://img.shields.io/badge/Accuracy-99.69%25-brightgreen.svg?style=for-the-badge" alt="Accuracy"/></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License"/></a>
   <a href="https://ijirt.org/article?manuscript=208448"><img src="https://img.shields.io/badge/IJIRT-Published%20Paper%20(ID%20208448)-success.svg?style=for-the-badge" alt="IJIRT Published"/></a>
+  <a href="docs/research/IJIRT_Published_Research_Paper.pdf"><img src="https://img.shields.io/badge/Paper-PDF%20Download-red.svg?style=for-the-badge&logo=adobeacrobatreader" alt="Paper PDF"/></a>
 </p>
 
 ---
@@ -198,7 +199,7 @@ python pipeline_execution.py
 
 ## 👤 Author & Research Attribution
 
-* **Primary Author & Lead Developer**:
+* **Primary Author & Developer**:
   - **Vivek Kale**
   - Department of Computer Applications, School of Information Technology, Indira University, Pune
   - Master of Science in Computer Applications (M.Sc. CA)
@@ -207,14 +208,19 @@ python pipeline_execution.py
 
 ---
 
-## 📜 Citation
+## 📜 Research Paper & Citation
 
-If you use AgriShield or its multi-task architecture in your research, please cite the published IJIRT paper:
+- **📄 Full Paper PDF**: [Download IJIRT Research Paper PDF](docs/research/IJIRT_Published_Research_Paper.pdf)
+- **🌐 Online Publication**: [View on IJIRT Journal Portal (Manuscript ID: 208448)](https://ijirt.org/article?manuscript=208448)
+- **🔗 DOI**: [10.64643/ijirt.208448](https://doi.org/10.64643/ijirt.208448)
+- **🏆 Author Publication Certificate**: [View Mr. Vivek Kale's Certificate](docs/certificates/publication_certificate.jpeg)
+
+If you use AgriShield or its multi-task architecture in your research, please cite:
 
 ```bibtex
 @article{kale2026cropdisease,
   title={Crop Disease Detection and Severity Estimation Using Machine Learning},
-  author={Kale, Vivek and Patil, Rahul and Suryavanshi, Pratap and Dhakad, Kavita},
+  author={Kale, Vivek and Dhakad, Kavita},
   journal={International Journal of Innovative Research in Technology (IJIRT)},
   volume={13},
   issue={3},
